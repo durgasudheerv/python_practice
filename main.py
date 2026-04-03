@@ -105,3 +105,34 @@ NameError: name 'hey' is not defined. Did you mean: 'hex'?
 >>> len(my_name)
 7
 '''
+
+###### tuple practice ####
+s = (1, 2, 3, 4, 5)
+print(s[0]) # this will print the first element of the tuple
+print(s[-1]) # this will print the last element of the tuple
+print(s[1:4]) # this will print the elements from index 1 to 3 (4 is not included)
+print(s.count(5)) # this will count the occurrences of 5 in the tuple
+print(s.index(3)) # this will print the index of the first occurrence of 3 in the tuple
+#s[0] = 10 # this will raise an error because tuples are immutable
+'''TypeError: 'tuple' object does not support item assignment
+'''
+
+######### set practice ######
+
+print("**********set practice******")
+s = {1, 11,55,22,44,55,56,66}
+print(s) # this will print the set, duplicates will be removed
+print(55 in s) # this will check if 55 is in the set
+print(100 in s) # this will check if 100 is in the set
+s.add(100) # this will add 100 to the set
+print(s) # this will print the set with 100 added
+s.remove(11) # this will remove 11 from the set
+print(s) # this will print the set with 11 removed
+s.copy() # this will create a copy of the set
+print(s) # this will print the original set
+print(s.difference({22, 44})) # this will return a new set with elements that are in s but not in the given set
+print(s.intersection({55, 56, 66})) # this will return a new set with elements that are common in both sets
+print(s.union({77, 88})) # this will return a new set with all elements from both sets
+print(s.isdisjoint({99, 100})) # this will check if s has no elements in common with the given set
+print(s.issubset({1, 55, 56, 66, 100})) # this will check if s is a subset of the given set
+print(s.issuperset({1, 55})) # this will check if s is a superset of the given set                              
