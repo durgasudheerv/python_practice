@@ -49,3 +49,41 @@ print(bus.get('name').get('reddies').get('reach'))
 # this will print 'late' because 'name' is a key in the dictionary and its value is another dictionary that contains 'reddies' as a key, which in turn has 'reach' as a key with the value 'late'
 print(bus.get('name').get('reddies').get('rating','not found'))
 # this will print 'not found' because 'name' is a key in the dictionary and
+
+
+## below are varibles to know about the memory location and type of the variable
+##tags which are used to identify the memory location of the variable and the type of the variable
+## based data values are stored in the memory location and the variable name
+#  is just a reference to that memory location
+# when we assign a value to a variable, 
+# Python creates an object in memory to 
+# hold that value and assigns the variable name to
+# reference that object. The id() function can be used to 
+# get the memory address of the object that a variable references, 
+# and the type() function can be used to get the type of the object.
+'''''
+>>> g = 10
+>>> g
+10
+>>> h = 5
+>>> h
+5
+>>> id(h)
+140725343048744
+>>> id(g)
+140725343048904
+>>> h =g
+>>> id(h)
+140725343048904
+>>> k = 10
+>>> id(k)
+140725343048904
+>>> type(k)
+<class 'int'>
+>>> PI =13.5
+>>> PI
+13.5
+>>> type(PI)
+<class 'float'>
+>>> 
+'''''
