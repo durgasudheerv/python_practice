@@ -87,3 +87,144 @@ print(bus.get('name').get('reddies').get('rating','not found'))
 <class 'float'>
 >>> 
 '''''
+
+
+#######data_types####
+''''
+>>> type(PI)
+<class 'float'>
+>>> none k
+  File "<stdin>", line 1
+    none k
+         ^
+SyntaxError: invalid syntax
+>>> k
+10
+>>> type(k)
+<class 'int'>
+>>> c
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    c
+NameError: name 'c' is not defined
+>>> k =2.5
+>>> type(k)
+<class 'float'>
+>>> l =55
+>>> k =l
+>>> type(k)
+<class 'int'>
+>>> c= float(k)
+>>> c
+55.0
+>>> int(c)
+55
+>>> g = c+k
+>>> g
+110.0
+>>> jh =g + jk
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    jh =g + jk
+            ^^
+NameError: name 'jk' is not defined. Did you mean: 'k'?
+>>> jh =g+ik
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    jh =g+ik
+          ^^
+NameError: name 'ik' is not defined. Did you mean: 'k'?
+>>> in =2+j5
+  File "<stdin>", line 1
+    in =2+j5
+    ^^
+SyntaxError: invalid syntax
+>>> num =5+kj
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    num =5+kj
+           ^^
+NameError: name 'kj' is not defined. Did you mean: 'k'?
+>>> num =5+6j
+>>> type(num)
+<class 'complex'>
+>>> c = complex(5,5)
+>>> c
+(5+5j)
+>>> list = [55,55,66,22,55]
+>>> range(10)
+range(0, 10)
+>>> list(range(10))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    list(range(10))
+    ~~~~^^^^^^^^^^^
+TypeError: 'list' object is not callable
+>>> 5>k
+False
+>>> l =6>5
+>>> l
+True
+>>> type(l)
+<class 'bool'>
+>>> int(l)
+1
+>>> float(l)
+1.0
+>>> l =(10,20,30,5,5)
+>>> l
+(10, 20, 30, 5, 5)
+>>>  j ={55 , 6 , 8 , 68,55}
+  File "<stdin>", line 1
+    j ={55 , 6 , 8 , 68,55}
+IndentationError: unexpected indent
+>>>  j ={55,6,8,68,55}      
+  File "<stdin>", line 1
+    j ={55,6,8,68,55}
+IndentationError: unexpected indent
+>>>  j = {55,6,8,68,55}
+  File "<stdin>", line 1
+    j = {55,6,8,68,55}
+IndentationError: unexpected indent
+>>>  j = {55, 6, 8, 68, 55}
+  File "<stdin>", line 1
+    j = {55, 6, 8, 68, 55}
+IndentationError: unexpected indent
+>>> j = {55, 6, 8, 68, 55}
+>>> j
+{8, 68, 6, 55}
+>>> list(range(10))  
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    list(range(10))
+    ~~~~^^^^^^^^^^^
+TypeError: 'list' object is not callable
+>>> del list
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(2,10,2)) 
+[2, 4, 6, 8]
+>>> list(range(0,10,2))
+[0, 2, 4, 6, 8]
+>>> list(range(0,10,1))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(0,10,5))
+[0, 5]
+>>> list(range(0,10,3))
+[0, 3, 6, 9]
+>>> str ="charan"
+>>> str
+'charan'
+>>> type(str)
+<class 'str'>
+>>> f ='f'
+>>> str(f)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    str(f)
+    ~~~^^^
+TypeError: 'str' object is not callable
+>>> type(f)
+<class 'str'>
+>>> 
+'''
